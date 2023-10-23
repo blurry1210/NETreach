@@ -4,38 +4,65 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="parallax">
-        <div class="parallax-content">
-            <h1>Parallax Effect Showcase</h1>
-        </div>
-        <div class="image-frame" id="imageFrame">
-            <div class="image-container">
-                <img src="laptop.png" alt="Image 1">
-            </div>
-            <div class="image-container">
-                <img src="1.png" alt="Image 2">
-            </div>
-            <div class="image-container">
-                <img src="2.png" alt="Image 3">
-            </div>
-            <div class="image-container">
-                <img src="3.png" alt="Image 4">
-            </div>
-            <div class="image-container">
-                <img src="4.png" alt="Image 5">
-            </div>
-            <div class="image-container">
-                <img src="image6.png" alt="Image 6">
-            </div>
-            <div class="image-container">
-                <img src="image7.png" alt="Image 7">
-            </div>
-            <div class="image-container">
-                <img src="image8.png" alt="Image 8">
-            </div>
-            <!-- Add more image-container divs here f   or the rest of the images -->
-        </div>
+    <div class="code-background">
+        <pre class="code-block" data-content="Line 1&#10;Line 2&#10;Line 3">
+            <div class="code-line" id="line1">const imageFrame = document.getElementById("imageFrame"); const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line2">const images = document.querySelectorAll(".image-container"); const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line3">const maxDistance = 100; // Maximum distance from the center const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line4">imageFrame.addEventListener("mousemove", (e) => { const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line5">    const centerX = imageFrame.clientWidth / 2 const imageFrame = document.getElementById("imageFrame");;</div>
+            <div class="code-line" id="line6">    const centerY = imageFrame.clientHeight / 2; const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line7">    images.forEach((image, ineFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line8">        const angle = (Math.PI * 2) * (index / images.length);const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line9">        const cursorDistanceX = Math.min(Math.abs(centerX - e.clientX), centerX - maxDistance);const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line10">        const cursorDistance), centerY - maxDistance);const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line11">        let moveX = cursorDistanceX * (angle > Math.PI / 2 && angle < 3 * Math.PI / 2 ? -1 : 1);const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line12">        let moveY = cursorDistanceY * (angle > Math.PI ? -1 : 1);const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line13">        // Check if the image is on the margin and adjust its positionconst imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line14">        if (index < 3) {const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line15">            moveY = -maxDistance; // Move the top 3 images to the top marginconst imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line16">        } else if (index >= 3 && index < 6) {const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line17">            moveY = maxDistance; // Move the bottom 3 images to the bottom marginconst imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line18">        } else if (index === 6) {const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line19">            moveX = -maxDistance; // Move the left image to the left marginconst imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line20">        } else if (index === 7) {const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line21">            moveX = maxDistance; // Move the right image to the right marginconst imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line22">        }const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line23">        image.style.transform = `translate(${moveX}px, ${moveY}px)`;const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line24">    });</div>
+            <div class="code-line" id="line25">});</div>
+            <div class="code-line" id="line1">const imageFrame = document.getElementById</div>
+            <div class="code-line" id="line2">const images = document.querySelectorAll(".image-container");const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line3">const maxDistance = 100; // Maximum distance from the centerconst imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line4">imageFrame.addEventListener("mousemove", (e) => {const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line5">    const centerX = imageFrame.clientWidth / 2;const</div>
+            <div class="code-line" id="line6">    const centerY = imageFrame.clientHeight / 2;const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line7">    images.forEach((image, index) => {const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line8">        const angle = (Math.PI * 2) * (index / imaId("imageFrame");</div>
+            <div class="code-line" id="line9">        const cursorDistanceX = Math.min(Math.abs(centerX - e.clientX), centerX - maxDistance);const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line10">        const cursorDistanceY = Math.min(Mance);const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line11">        let moveX = cursorDistanceX * (angle > Math.PI / imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line12">        let moveY = cursorDistanceY * (angle > Matocument.getElementById("imageFrame");</div>
+            <div class="code-line" id="line13">        // Check if the image is on the margin and adjust its positionconst imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line14">        if (index < 3) {const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line15">            moveY = -maxDistance; // Move the top 3 images to the top marginconst imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line16">        } else if (index >= 3 && index < 6) constmentById("imageFrame");{</div>
+            <div class="code-line" id="line17">            moveY = maxDistance; // Move the bottom 3 images to the bottom marginconst imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line18">        } else if (index === 6) {const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line19">            moveX = -maxDistance; // Move the left image to the left marginconst imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line20">        } else if (index === 7) {const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line21">            moveX = maxDistance; // Move the right image to the right marginvconst imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line22">        }</div>
+            <div class="code-line" id="line23">        image.style.transform = `translate(${moveX}px, ${moveY}px)`;const imageFrame = document.getElementById("imageFrame");</div>
+            <div class="code-line" id="line24">    });</div>
+            <div class="code-line" id="line25">});</div>
+        </pre>
     </div>
     <script src="effect.js"></script>
+    <img src="logotraw.png" class="logo" alt="Logo">
+
+    <button class="cool-button">Hover Me</button>
+
+   
 </body>
 </html>
