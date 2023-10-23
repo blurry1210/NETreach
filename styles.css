@@ -77,15 +77,21 @@ body {
 
 .cool-button {
     background-color: #6a1b9a;
-    color: #fff;
+    color: #f10000;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
-    z-index:1000;
+    z-index: 1000; /* Increase the z-index to bring the button to the front */
 }
 
 .cool-button:hover {
     background-color: #ff5733;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px; /* You can adjust the margin as needed */
+    z-index: 1001; /* Ensure the button container is on top of other elements */
 }
