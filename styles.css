@@ -88,6 +88,7 @@ body {
     z-index: 1000;
     position: relative;
     overflow: hidden;
+    animation: fadeIn 5s ease-in-out forwards; /* Apply the fade-in animation */
 }
 
 .cool-button:hover {
