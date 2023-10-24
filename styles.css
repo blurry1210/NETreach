@@ -124,4 +124,235 @@ body {
 .cool-button.hidden {
     display: none;
 }
-/*start */
+/*start home page*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*header, nav*/
+header{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background: #161f2e;
+}
+header li, a, button{
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu-mobile-img{
+    z-index: 101;
+    font-size: 45px;
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+.menu-mobile{
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0px;
+    left: 0;
+    display: none;
+    padding-top: 90px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #161f2e;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+.menu-mobile.open{
+    height: 400px;
+}
+.menu-mobile__links ul{
+    display: flex;
+}
+.menu-mobile__links li{
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.menu-mobile__links li a{
+    display: block;
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: #fefefe;
+    margin: 0 5px;
+}
+.menu-mobile__links li a:hover{
+    background-color: rgb(35, 38, 61);
+}
+.menu-mobile__links li:nth-child(5) a:hover{
+    background-color: transparent;
+}
+
+.menu-mobile__links button{
+    padding: 9px 25px;
+    background-color: rgba(43, 69, 116, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.menu-mobile__links button:hover {
+    background-color: rgba(43, 69, 116, 0.8);
+}
+
+.navbar{
+    flex: 80%;
+    display: flex;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.header__logo{
+    flex: 65%;
+    display: flex;
+    position: relative;
+}
+.header__logo__img{
+    z-index: 2;
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar__links{
+    flex: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navbar__links li a:hover{
+    color: #b5bec4;
+}
+
+.active{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.login-btn {
+    z-index: 100;
+}
+
+.login-btn button{
+    margin-right: 60px;
+    padding: 9px 25px;
+    background-color: rgba(43, 69, 116, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.login-btn button:hover{
+    background-color: rgba(43, 69, 116, 0.8);
+}
+@media only screen and (max-width: 900px){
+    .navbar__links{
+        display: none;
+    }
+    .login-btn{
+        display: none;
+    }
+    .menu-mobile-img{
+        display: block;
+    }
+    .menu-mobile{
+        display: flex;
+    }
+}
+
+/*footer*/
+footer{
+    background-color: #161f2e;
+    width: 100%;
+}
+
+.footer__container{
+    width: 100%;
+    padding: 70px 30px 20px 30px;
+}
+.footer__container-social{
+    display: flex;
+    justify-content: center;
+}
+.footer__container-social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f0ebeb;
+    margin: 10px;
+    border-radius: 50%;
+}
+.footer__container-social a i{
+    font-size: 2rem;
+    color: black;
+    opacity: 0.9;
+}
+.footer__container-social a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.footer__container-social a:hover i{
+    color: #fff;
+    transition: 0.5s;
+}
+.footer__container-nav{
+    margin: 30px 0;
+}
+.footer__container-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer__container-nav ul li a{
+    color:#fff;
+    margin: min(30px, 5vw);
+    text-decoration: none;
+    font-size: clamp(.5rem, 2vw + .5rem, 1rem);
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footer__container-navul li a:hover{
+    opacity: 1;
+}
+.footer__copy{
+    color: #fff;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+.footer__copy p{
+    color: #fff;
+}
+.footer__copy-name{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
