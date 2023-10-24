@@ -18,7 +18,6 @@
             setTimeout(displayNextLine, 1000); // Delay between lines (adjust as needed)
         }
     }
-
     displayNextLine();
 
     
