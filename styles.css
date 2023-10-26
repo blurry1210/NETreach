@@ -1,7 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+
+}
+
+.smooth-scroll {
+    scroll-behavior: smooth;
 }
 
 .code-background {
@@ -355,4 +359,84 @@ footer{
     font-weight: 400;
     margin: 0px 5px;
 }
+
+/*go on */
+
+
+.hero-slider {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-item.active {
+    opacity: 1;
+}
+
+.square-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #f2f2f2;
+    margin-top: 50px; /* Add some spacing from the slider */
+}
+
+/* Modern font for the squares */
+.square {
+    border-radius: 15px; /* Rounded corners for the squares */
+    padding: 20px; /* Add padding to the squares for spacing */
+    margin: 10px; /* Add margin for spacing between squares */
+    display: inline-block;
+    width: 30%; /* Adjust the width as needed */
+    text-align: center;
+    opacity: 0; /* Start with zero opacity for the fade-in effect */
+    transform: translateY(20px); /* Move squares slightly down initially */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background: linear-gradient(to bottom, #8e44ad, #913d88); /* Define a linear gradient background */
+    animation: colorFade 3s infinite alternate; /* Apply the animation */
+}
+
+@keyframes colorFade {
+    0% {
+      background: linear-gradient(to bottom, #8e44ad, #913d88); /* Start with the initial gradient */
+    }
+    50% {
+      background: linear-gradient(to bottom, #913d88, #8e44ad); /* Midpoint gradient */
+    }
+    100% {
+      background: linear-gradient(to bottom, #8e44ad, #913d88); /* Return to the initial gradient */
+    }
+  }
+
+.square h2 {
+    font-weight: bold; /* Bold font for the headline */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-family: 'Your Bold Futuristic Font', sans-serif; /* Specify the bold futuristic font */
+    margin: 0; /* Remove default margin for the h2 element */
+}
+
+.square p {
+    font-size: 16px; /* Adjust the font size for the content */
+    font-weight: normal; /* Set the font weight for the content as needed */
+    margin: 10px 0; /* Add spacing between the headline and content */
+}
+
+
+/* Add your existing code for .slider-bar and .slider-points here */
 
