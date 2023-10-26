@@ -438,5 +438,120 @@ footer{
 }
 
 
-/* Add your existing code for .slider-bar and .slider-points here */
+/* contact styles*/
+.rectangle-container{
+    margin-top: 50px;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+}
 
+.rectangle {
+    width: 300px;
+    background-color: #161f2e; /* Dark blue background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex; /* Use flexbox to center items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.rectangle:hover{
+    transform: scale(1.1);
+}
+
+/* Adjust the styles of the <a> elements inside .rectangle */
+.rectangle a {
+    text-decoration: none;
+    color: inherit;
+    display: flex; /* Use flexbox to center items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Center the <i> and <h3> elements inside <a> */
+.rectangle a i,
+.rectangle a h3 {
+    margin: 5px;
+}
+
+/* Add some spacing between the elements if needed */
+.rectangle a i {
+    margin-bottom: 5px;
+}
+
+.map_container {
+    margin-top: 100px;
+    text-align: center; /* Center the contents horizontally */
+    padding: 0 20px; /* Add padding left and right */
+}
+
+/* Styles for the iframe within the map container */
+.map_container > p > iframe {
+    border: 2px solid #161f2e;
+    width: 100%; /* Make the iframe fill its container horizontally */
+    max-width: 1200px; /* Set a maximum width */
+    height: 400px; /* Adjust the height as needed */
+    border: 0; /* Remove the iframe border (already specified above) */
+}
+
+.form-container {
+    text-align: center; /* Center the contents horizontally */
+    width: 60%; /* Set the width of the container to 60% */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.form-container form{
+    margin-top: 50px;
+}
+
+/* Style for the form container */
+.form-container {
+    margin-top:50px;
+    margin-bottom: 50px;
+    background-color: #f7f7f7; /* Background color for the container */
+    padding: 20px;
+    border-radius: 10px; /* Rounded container */
+}
+
+/* Styles for the centered-input elements (labels and input fields) */
+.centered-input {
+    margin-bottom: 15px;
+}
+
+.centered-input label {
+    display: block;
+    margin-bottom: 5px;
+    color: #161f2e; /* Text color */
+}
+
+.centered-input input[type="text"],
+.centered-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 10px; /* Rounded input fields */
+    color: #161f2e; /* Text color */
+}
+
+/* Style the button */
+.buton_form {
+    background-color: #161f2e; /* Dark blue background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 10px; /* Rounded button */
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block; /* Make the button a block element for centering */
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+/* Adjust the button on hover (e.g., change background color) */
+.buton_form:hover {
+    background-color: #0d1420; /* Darker blue on hover */
+}
