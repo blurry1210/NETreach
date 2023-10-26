@@ -93,6 +93,7 @@ body {
     position: relative;
     overflow: hidden;
     animation: fadeIn 5s ease-in-out forwards; /* Apply the fade-in animation */
+    margin: 0 20vh;
 }
 
 .cool-button:hover {
@@ -118,10 +119,9 @@ body {
 
 .button-container {
     text-align: center;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    position: relative; /* Add this line to make it relative to its parent */
+    top: 0; /* Reset any potential vertical offset */
     z-index:11;
 }
 
@@ -388,6 +388,7 @@ footer{
     opacity: 1;
 }
 
+
 .square-section {
     display: flex;
     justify-content: center;
@@ -395,13 +396,15 @@ footer{
     min-height: 50vh;
     background-color: #f2f2f2;
     margin-top: 50px; /* Add some spacing from the slider */
+    text-align: center;
+    padding: 50px;
 }
 
 /* Modern font for the squares */
 .square {
     border-radius: 15px; /* Rounded corners for the squares */
     padding: 20px; /* Add padding to the squares for spacing */
-    margin: 10px; /* Add margin for spacing between squares */
+    margin: 50px; /* Add margin for spacing between squares */
     display: inline-block;
     width: 30%; /* Adjust the width as needed */
     text-align: center;
