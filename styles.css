@@ -594,3 +594,21 @@ footer{
     background: linear-gradient(45deg, #ffa67a, #ff6b6b);
     transform: scale(1.05);
 }
+
+.service {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    margin: 20px;
+}
+
+.service img {
+    width: 60vw;
+    height: 60vh;
+    border-radius: 10px; /* Rounded corners for the images */
+}
+
+.service p {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
