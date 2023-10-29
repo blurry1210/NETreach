@@ -419,7 +419,9 @@ footer{
     text-align: center;
     opacity: 0; /* Start with zero opacity for the fade-in effect */
     transform: translateY(20px); /* Move squares slightly down initially */
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease, transform 0.3s ease; /* Add transform transition */
+    transform-origin: center center; /* Set the transform origin to the center */
+    overflow: hidden; /* Add overflow:hidden to clip zoomed content */
     background: linear-gradient(to bottom, #8e44ad, #913d88); /* Define a linear gradient background */
     animation: colorFade 3s infinite alternate; /* Apply the animation */
 }
@@ -447,6 +449,10 @@ footer{
     font-size: 16px; /* Adjust the font size for the content */
     font-weight: normal; /* Set the font weight for the content as needed */
     margin: 10px 0; /* Add spacing between the headline and content */
+}
+
+.square:hover {
+    transform: scale(1.1);
 }
 
 

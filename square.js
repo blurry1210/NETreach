@@ -11,6 +11,14 @@ function fadeInSquares(entries, observer) {
     });
 }
 
+function zoomInSquare(event) {
+    event.target.style.transform = 'scale(1.1)';
+}
+
+function resetSquare(event) {
+    event.target.style.transform = 'scale(1)';
+}
+
 const options = {
     root: null,
     rootMargin: '0px',
@@ -21,4 +29,8 @@ const squareObserver = new IntersectionObserver(fadeInSquares, options);
 
 squares.forEach((square) => {
     squareObserver.observe(square);
+
+    // Add event listeners for hover effect
+    square.addEventListener('mouseenter', zoomInSquare);
+    square.addEventListener('mouseleave', resetSquare);
 });
