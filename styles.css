@@ -612,3 +612,41 @@ footer{
     opacity: 0;
     transition: opacity 1s ease;
 }
+
+.animated-title {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    margin-bottom: 20px;
+  }
+  
+  .index {
+    font-size: 2rem;
+    margin-right: 20px;
+    color: #3498db;
+    border: 2px solid #3498db;
+    padding: 5px 10px; /* Add padding for a border around the text */
+    border-radius: 5px; /* Add rounded corners for a modern look */
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .in-viewport {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  .fade-in-image {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  
+  .fade-in-image.in-viewport {
+    opacity: 1;
+  }
