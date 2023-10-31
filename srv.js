@@ -15,15 +15,13 @@ function handleScroll() {
             const description = service.querySelector('.service1__content');
             description.style.opacity = 1;
           }, 1000);
-  
           service.classList.add('visible');
         }
       }
     });
   }
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', handleScroll());
   
-  
-  // Initial check for elements in the viewport
-  handleScroll();
+handleScroll();
+
   
