@@ -311,6 +311,33 @@ header li, a, button{
     .intro{
         background: url(introservicii.png);
     }
+    .service{
+        height: 1550px!important;
+        opacity: 1!important;
+    }
+    .service1{
+        margin-top: 0!important;
+        flex-direction: column;
+        height: 1400px!important;
+        opacity: 1!important;
+    }
+    .service1__image{
+        flex: 20%!important;
+        opacity: 1!important;
+        width: 100%;
+        margin-left: 0!important;
+        border-radius: 0!important;
+        height: 100%;
+    }
+    .service1__content{
+        flex: 80%!important;
+        opacity: 1!important;
+    }
+    .service1__content-info {
+        height: 90%!important;
+        width: 95%!important;
+        opacity: 1!important;
+    }
 }
 
 /*footer*/
@@ -630,16 +657,6 @@ footer{
     background-color: #0d1420;
 }
 
-.service img {
-    width: 60vw;
-    height: 60vh;
-    border-radius: 10px; /* Rounded corners for the images */
-}
-
-.service p {
-    opacity: 0;
-    transition: opacity 1s ease;
-}
 
 .animated-title {
     height: 200px;
@@ -649,7 +666,6 @@ footer{
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s;
-    margin-bottom: 20px;
   }
 .service1{
     margin-top: 40px;
@@ -677,13 +693,13 @@ footer{
 }
 .service1__content-info{
     height: 80%;
-    width: 70%;
+    width: min(90%, 600px);
     background: linear-gradient(to bottom, #8e44ad, #913d88);
     border-radius: 30px;
 }
   
-  .index {
-    font-size: 2rem;
+  .animated-index {
+    font-size: clamp(1rem, 1rem + 2.5vw, 3rem);
     margin-right: 20px;
     color: #3498db;
     border: 2px solid #3498db;
@@ -691,8 +707,8 @@ footer{
     border-radius: 5px; /* Add rounded corners for a modern look */
   }
   
-  .title {
-    font-size: 3rem;
+  .ani-title {
+    font-size: clamp(1rem, 1rem + 2.5vw, 3rem);
     color: #333;
   }
   

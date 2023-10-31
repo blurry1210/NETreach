@@ -21,8 +21,8 @@ function handleScroll() {
       }
     });
   }
-  
   window.addEventListener('scroll', handleScroll);
+  
   
   // Initial check for elements in the viewport
   handleScroll();
