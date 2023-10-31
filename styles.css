@@ -296,6 +296,14 @@ header li, a, button{
     .menu-mobile{
         display: flex;
     }
+    .square-section{
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-evenly!important;
+    }
+    .square{
+        flex: 1;
+    }
 }
 
 /*footer*/
@@ -413,9 +421,10 @@ footer{
 .square {
     border-radius: 15px; /* Rounded corners for the squares */
     padding: 20px; /* Add padding to the squares for spacing */
-    margin: 50px; /* Add margin for spacing between squares */
+    margin: 30px 30px; /* Add margin for spacing between squares */
     display: inline-block;
-    width: 30%; /* Adjust the width as needed */
+    width: min(600px, 90%); /* Adjust the width as needed */
+    height: min(250px, 30vh);
     text-align: center;
     opacity: 0; /* Start with zero opacity for the fade-in effect */
     transform: translateY(20px); /* Move squares slightly down initially */
