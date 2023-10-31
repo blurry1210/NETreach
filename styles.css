@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #bfcae0;
+    background-color: #161f2e;
 }
 
 .smooth-scroll {
@@ -154,7 +154,7 @@ header{
     display: flex;
     align-items: center;
     padding: 30px;
-    background: #161f2e;
+    background: #0d1420;
 }
 header li, a, button{
     font-weight: 500;
@@ -315,7 +315,7 @@ header li, a, button{
 
 /*footer*/
 footer{
-    background-color: #161f2e;
+    background-color: #0d1420;
     width: 100%;
 }
 
@@ -430,7 +430,7 @@ footer{
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    background-color: #bfcae0;
+    background-color: #161f2e;
     margin-top: 20px; /* Add some spacing from the slider */
     text-align: center;
     padding: 50px;
@@ -627,7 +627,7 @@ footer{
     text-align: center;
     opacity: 0;
     transition: opacity 1s ease;
-    background-color: #0d1420;
+    background-color: #161f2e;
 }
 
 .service img {
@@ -693,7 +693,7 @@ footer{
   
   .title {
     font-size: 3rem;
-    color: #333;
+    color: #ffffff;
   }
   
   .in-viewport {
@@ -859,8 +859,10 @@ footer{
 .intro__content h1{
     text-align: center;
     font-size: clamp(1rem, 0.5rem + 2.5vw, 3rem);
+    color: #ffffff;
 }
 .intro__content p{
     text-align: center;
     font-size: clamp(1rem, 0.75rem + 1.25vw, 2rem);
+    color: #ffffff;
 }
