@@ -627,7 +627,7 @@ footer{
     text-align: center;
     opacity: 0;
     transition: opacity 1s ease;
-    margin: 20px;
+    background-color: #0d1420;
 }
 
 .service img {
@@ -642,13 +642,45 @@ footer{
 }
 
 .animated-title {
+    height: 200px;
     display: flex;
     align-items: center;
+    justify-content: center;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s;
     margin-bottom: 20px;
   }
+.service1{
+    margin-top: 40px;
+    height: 90vh;
+    display: flex;
+    
+}
+.service1__image{
+    margin: auto;
+    margin-left: 20px;
+    flex: 50%;
+    height: 80%;
+    background: url(26143.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    border-radius: 20px;
+}
+.service1__content{
+    opacity: 0;
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service1__content-info{
+    height: 80%;
+    width: 70%;
+    background: linear-gradient(to bottom, #8e44ad, #913d88);
+    border-radius: 30px;
+}
   
   .index {
     font-size: 2rem;
