@@ -2,7 +2,7 @@ function handleScroll() {
     const services = document.querySelectorAll('.service');
     services.forEach((service) => {
       const rect = service.getBoundingClientRect();
-      if (rect.top >= 0 && rect.bottom <= window.innerHeight+500) {
+      if (rect.top >= 0 && rect.bottom <= window.innerHeight+700) {
         if (!service.classList.contains('visible')) {
           service.style.top = '0';
           service.style.opacity = 1;
@@ -20,7 +20,7 @@ function handleScroll() {
       }
     });
   }
-  window.addEventListener('scroll', handleScroll());
+  window.addEventListener('scroll', handleScroll);
   
 handleScroll();
 
