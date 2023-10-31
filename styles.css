@@ -308,6 +308,9 @@ header li, a, button{
         flex-direction: column;
         align-items: center;
     }
+    .intro{
+        background: url(introservicii.png);
+    }
 }
 
 /*footer*/
@@ -802,4 +805,30 @@ footer{
     left: 5px;
     bottom: -100px;
     color: rgb(136, 131, 131);
+}
+
+/* Servicii */
+
+.intro{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.intro__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro__content h1{
+    text-align: center;
+    font-size: clamp(1rem, 0.5rem + 2.5vw, 3rem);
+}
+.intro__content p{
+    text-align: center;
+    font-size: clamp(1rem, 0.75rem + 1.25vw, 2rem);
 }
