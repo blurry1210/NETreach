@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-
+    background-color: #bfcae0;
 }
 
 .smooth-scroll {
@@ -212,7 +212,7 @@ header li, a, button{
 
 .menu-mobile__links button{
     padding: 9px 25px;
-    background-color: rgba(43, 69, 116, 1);
+    background-color: #2b4574;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -405,14 +405,26 @@ footer{
     opacity: 1;
 }
 
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); /* Background color for the text layer */
+    color: #fff; /* Text color */
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px; /* Adding round corners with 10px radius */
+}
+
 
 .square-section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    background-color: #f2f2f2;
-    margin-top: 50px; /* Add some spacing from the slider */
+    background-color: #bfcae0;
+    margin-top: 20px; /* Add some spacing from the slider */
     text-align: center;
     padding: 50px;
 }
