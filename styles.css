@@ -20,10 +20,12 @@ body {
 }
 
 .code-block {
+    height: 100%;
+    width: 100%;
     font-family: 'Courier New', monospace;
     color: transparent; /* Set text color to transparent initially */
     white-space: pre;
-    margin: 0;
+    margin-top: 0;
     padding: 20px;
     animation: glow 3s linear infinite; /* Apply the glowing animation to the entire block */
     display: inline-block; /* Display as an inline-block */
@@ -34,7 +36,7 @@ body {
     position: relative; /* Add relative positioning for pseudo-element */
     background: url('code-lines.png'); /* Set a background image for code lines */
     background-repeat: no-repeat; /* Prevent repeating of the image */
-    background-size: contain; /* Scale the image to fit the container */
+    background-size: cover; /* Scale the image to fit the container */
     width: 100%; /* Set the width to 100% to align to the left */
     z-index: 1 !important;
 }
@@ -79,6 +81,10 @@ body {
 }
 .text-box{
     z-index:100;
+}
+#index_button{
+    width: 200px;
+    height: 100px;
 }
 
 .cool-button {
@@ -181,12 +187,12 @@ header li, a, button{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background-color: #161f2e;
+    background-color: #0d1420;
     overflow: hidden;
     transition: height 0.5s;
 }
 .menu-mobile.open{
-    height: 400px;
+    height: 350px;
 }
 .menu-mobile__links ul{
     display: flex;
@@ -309,7 +315,7 @@ header li, a, button{
         align-items: center;
     }
     .intro{
-        background: url(introservicii.png);
+        background: url(servicii1.png);;
     }
     .service{
         height: 1550px!important;
@@ -322,15 +328,15 @@ header li, a, button{
         opacity: 1!important;
     }
     .service1__image{
-        flex: 20%!important;
+        flex: 0.5!important;
         opacity: 1!important;
         width: 100%;
         margin-left: 0!important;
         border-radius: 0!important;
-        height: 100%;
+        height: 20vh!important;
     }
     .service1__content{
-        flex: 80%!important;
+        flex: 1!important;
         opacity: 1!important;
     }
     .service1__content-info {
@@ -678,7 +684,7 @@ footer{
     margin-left: 20px;
     flex: 50%;
     height: 80%;
-    background: url(26143.jpg);
+    background: url(servicii2.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0;
@@ -755,6 +761,7 @@ footer{
     background: transparent;
     color: #fff;
     border: 2px solid rgba(255, 255, 255, .2);
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     border-radius: 10px;
@@ -851,22 +858,25 @@ footer{
 .credit{
     position: absolute;
     left: 5px;
-    bottom: -100px;
+    top: 110%;
     color: rgb(136, 131, 131);
 }
 
 /* Servicii */
 
 .intro{
-    height: 50vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(servicii1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .intro__content{
+    background-color: rgba(0, 0, 0, .6);
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -874,11 +884,11 @@ footer{
 }
 .intro__content h1{
     text-align: center;
-    font-size: clamp(1rem, 0.5rem + 2.5vw, 3rem);
-    color: #ffffff;
+    font-size: clamp(1.5rem, 0.5rem + 2.5vw, 3rem);
+    color: #FAFAFA;
 }
 .intro__content p{
     text-align: center;
-    font-size: clamp(1rem, 0.75rem + 1.25vw, 2rem);
-    color: #ffffff;
+    font-size: clamp(1.5rem, 0.75rem + 1.25vw, 2rem);
+    color: #FAFAFA;
 }
