@@ -686,10 +686,11 @@ footer{
     margin: auto;
     margin-left: 20px;
     flex: 50%;
-    height: 400px;
-    background: url(servicii2.png);
+    height: 700px;
+    background: url(serv1n.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     opacity: 0;
     border-radius: 20px;
 }
@@ -697,7 +698,9 @@ footer{
     flex: 50%;
     height: fit-content;
     opacity: 0;
-    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .service1__content-info{
     color: #eceaea;
