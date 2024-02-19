@@ -433,73 +433,70 @@ footer{
     width: 100%;
     height: 100%;
     position: absolute;
-    opacity: 0;
     transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute; /* Ensure the image is positioned absolutely within slider-item */
+    z-index: -1; /* Place image behind text content */
 }
 
 .slider-item.active {
     opacity: 1;
 }
 
-.slide-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5); /* Background color for the text layer */
-    color: #fff; /* Text color */
-    padding: 10px;
-    font-size: 18px;
-    border-radius: 10px; /* Adding round corners with 10px radius */
-}
-
-
 .square-section {
+    position: relative; /* Position relative to its parent */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
-    background-color: #161f2e;
-    margin-top: 20px; /* Add some spacing from the slider */
+    width: 100%; /* Take full width of the slider-item */
+    z-index: 2; /* Higher z-index to be on top of the image */
     text-align: center;
-    padding: 50px;
+    padding: 20px;
+    /*background-color: rgba(22, 31, 46, 0.8);  Semi-transparent background */
 }
 
-/* Modern font for the squares */
 .square {
-    border-radius: 15px; /* Rounded corners for the squares */
-    padding: 20px; /* Add padding to the squares for spacing */
-    margin: 30px 30px; /* Add margin for spacing between squares */
-    display: inline-block;
-    width: min(600px, 90%); /* Adjust the width as needed */
-    height: min(250px, 30vh);
-    text-align: center;
-    opacity: 0; /* Start with zero opacity for the fade-in effect */
-    transform: translateY(20px); /* Move squares slightly down initially */
-    transition: opacity 0.5s ease, transform 0.5s ease, transform 0.3s ease; /* Add transform transition */
-    transform-origin: center center; /* Set the transform origin to the center */
-    overflow: hidden; /* Add overflow:hidden to clip zoomed content */
-    background: linear-gradient(to bottom, #8e44ad, #913d88); /* Define a linear gradient background */
-    animation: colorFade 3s infinite alternate; /* Apply the animation */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 80px; /* Reduced margin for better spacing */
+    display: inline-flex; /* Use inline-flex for better alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: auto; /* Auto width based on content */
+    max-width: 400px; /* Maximum width */
+    height: auto; /* Auto height based on content */
+    background: linear-gradient(to bottom, #8e44ad, #913d88);
+    color: #fff; /* Ensure text is white for readability */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.square h2, .square p {
+    margin: 10px 0; /* Uniform margin for spacing */
+}
+
+.square:hover {
+    transform: scale(1.05); /* Slightly less scale for subtler effect */
+    background: linear-gradient(to bottom, #913d88, #8e44ad); /* Invert gradient on hover */
 }
 
 @keyframes colorFade {
-    0% {
-      background: linear-gradient(to bottom, #8e44ad, #913d88); /* Start with the initial gradient */
+    0%, 100% {
+        background: linear-gradient(to bottom, #8e44ad, #913d88);
     }
     50% {
-      background: linear-gradient(to bottom, #913d88, #8e44ad); /* Midpoint gradient */
+        background: linear-gradient(to bottom, #913d88, #8e44ad);
     }
-    100% {
-      background: linear-gradient(to bottom, #8e44ad, #913d88); /* Return to the initial gradient */
-    }
-  }
+}
+
 
 .square h2 {
     font-weight: bold; /* Bold font for the headline */

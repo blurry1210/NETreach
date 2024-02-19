@@ -2,9 +2,11 @@ const sliderItems = document.querySelectorAll('.slider-item');
 let currentIndex = 0;
 
 function showSlide(index) {
+    console.log(`Showing slide: ${index}`); // Debugging log
     sliderItems.forEach((item, i) => {
         if (i === index) {
             item.classList.add('active');
+            console.log(`Activating slide ${i}`); // Debugging log
         } else {
             item.classList.remove('active');
         }
