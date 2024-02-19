@@ -35,3 +35,12 @@ smoothScrollLinks.forEach(link => {
         }
     });
 });
+
+function redirectToHomePage() {
+    setTimeout(function() {
+        window.location.href = 'home.html'; // Replace 'home.html' with the actual URL of your home page
+    }, 3000); // 3000 milliseconds = 3 seconds
+}
+
+// Call the function on page load
+redirectToHomePage();
