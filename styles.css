@@ -340,6 +340,8 @@ header li, a, button{
         flex: 1!important;
         margin-top: 1rem;
         padding-left: 0!important;
+        align-items: flex-start!important;
+        height: fit-content!important;
     }
     .service1__content-info {
         width: 100%!important;
@@ -686,7 +688,7 @@ footer{
     height: 700px;
     background: url(serv1n.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     opacity: 0;
     border-radius: 20px;
@@ -709,7 +711,7 @@ footer{
     border-radius: 30px;
 }
 .service1__content-info p{
-    font-size: clamp(1.3rem, 0.5rem + 1.5vw, 1.7rem);
+    font-size: clamp(1.3rem, 0.5rem + 1vw, 1.6rem);
 }
 .pret{
     margin-top: 1rem;
@@ -733,9 +735,10 @@ footer{
     padding: 0.6rem;
     border-radius: 1rem;
     text-align: center;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.2rem;
+    font-size: clamp(1.3rem, 0.5rem + 1.5vw, 1.7rem);
 }
 .pret-contact a:hover{
     cursor: pointer;
