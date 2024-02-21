@@ -343,6 +343,12 @@ header li, a, button{
         align-items: flex-start!important;
         height: fit-content!important;
     }
+    #service2_img{
+        order:1!important;
+    }
+    #service2_content{
+        order:2!important;
+    }
     .service1__content-info {
         width: 100%!important;
         opacity: 1!important;
