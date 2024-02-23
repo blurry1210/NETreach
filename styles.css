@@ -303,14 +303,72 @@ header li, a, button{
     .menu-mobile{
         display: flex;
     }
-    .square-section{
+
+    .animated-title {
+        /* Adjust the properties as needed for mobile screens */
+        margin-bottom: 10vh; /* Increased spacing for mobile screens */
+        opacity: 1; /* Adjusted for mobile, if needed */
+        transform: translateY(0); /* Adjusted for mobile, if needed */
+    }
+
+    .service_sectionx > * {
+        margin-bottom: 10vh;
+    }
+
+    .service_sectionx > *:last-child {
+        margin-bottom: 10vh; /* Remove margin from the last element */
+    }
+
+    .service_sectionx .square-section {
+        width: 90vw; /* Adjusted width for mobile screens */
+        margin-top: 10vh;
+        display: flex;
         flex-direction: column;
         height: 100vh;
-        justify-content: space-evenly!important;
+        justify-content: space-evenly !important;
+        align-items: center; /* Center align the squares */
     }
-    .square{
-        flex: 1;
+    
+    .service_sectionx .square {
+        width: 90%;
+        /* Adjust margins for top and bottom */
+        margin-top: 5vw; /* Half of 10vw, as it will be combined with the bottom margin of the previous element */
+        margin-bottom: 5vw; /* Half of 10vw */
+        /* Other styles for .square */
     }
+    
+    /* You might need this to handle the first and last square */
+    .square:first-child {
+        margin-top: 0; /* Remove top margin for the first square */
+    }
+    
+    .square:last-child {
+        margin-bottom: 0; /* Remove bottom margin for the last square */
+    }
+
+    .service1 .square-section {
+        margin-top:60vh;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-evenly !important;
+        align-items: center; /* Center align the squares */
+    }
+
+    .service1 .square-section .square {
+        margin-top: 5vw; /* Half of 10vw */
+        margin-bottom: 5vw; /* Half of 10vw */
+        /* Other styles for .square */
+    }
+
+    .service1 .square-section .square:first-child {
+        margin-top: 0; /* Remove top margin for the first square */
+    }
+
+    .service1 .square-section .square:last-child {
+        margin-bottom: 0; /* Remove bottom margin for the last square */
+    }
+    
     .wrapper .remember-forgot{
         flex-direction: column;
         align-items: center;
@@ -355,6 +413,24 @@ header li, a, button{
         opacity: 1!important;
         border-radius: 0!important;
     }
+    .service-sectionx {
+        margin-bottom: 20vh;
+    }
+    
+    /* To ensure the last element in a series doesn't have a bottom margin */
+    .service-sectionx :last-child {
+        margin-bottom: 0;
+    }
+    
+}
+
+.service-sectionx {
+    margin-bottom: 20vh;
+}
+
+/* To ensure the last element in a series doesn't have a bottom margin */
+.service-sectionx :last-child {
+    margin-bottom: 0;
 }
 
 /*footer*/
@@ -461,6 +537,7 @@ footer{
 }
 
 .square-section {
+    margin-top: 15vh;
     position: relative; /* Position relative to its parent */
     display: flex;
     justify-content: center;
@@ -680,46 +757,9 @@ footer{
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s;
-  }
-.service1{
-    margin-top: 40px;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    
+    margin-bottom: 1vh;
 }
-.service1__image{
-    margin: auto;
-    margin-left: 20px;
-    flex: 50%;
-    height: 700px;
-    background: url(serv1n.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    opacity: 0;
-    border-radius: 20px;
-}
-.service1__content{
-    flex: 50%;
-    height: fit-content;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.service1__content-info{
-    color: #eceaea;
-    text-align: left;
-    padding: 2rem;
-    height: fit-content;
-    width: min(90%, 600px);
-    background: linear-gradient(to bottom, #8e44ad, #913d88);
-    border-radius: 30px;
-}
-.service1__content-info p{
-    font-size: clamp(1.3rem, 0.5rem + 1vw, 1.6rem);
-}
+
 .pret{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -764,6 +804,8 @@ footer{
   .ani-title {
     font-size: clamp(1rem, 1rem + 2.5vw, 3rem);
     color: #fff;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
   
   .in-viewport {
@@ -997,3 +1039,149 @@ footer{
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+
+/* slider servicii */
+
+.conbg {
+    width: 100%;
+    height: 500px;
+  }
+  .bg2 {
+    z-index: 20;
+    position: relative;
+    width: 70%;
+    margin: 100px auto;
+    transform: rotate(10deg);
+    background-image: url(https://images.unsplash.com/photo-1623691183627-4d6075a8d0d7?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzUwNDk&ixlib=rb-4.0.3&q=80);
+    background-size: cover;
+    background-position: right -50px;
+    background-color: lightslategray;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+  }
+  .bg1 {
+    z-index: 20;
+    position: relative;
+    margin: auto;
+    transform: rotate(-5deg);
+    background-image: url(https://images.unsplash.com/photo-1575419268007-a9a5e6b1ce0b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzQ5NjY&ixlib=rb-4.0.3&q=80);
+    background-size: cover;
+    background-position: right -70px;
+    background-color: lightslategray;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+  }
+  .bg {
+    z-index: 21;
+    position: relative;
+    margin: auto;
+    transform: rotate(-5deg);
+    height: 500px;
+    background-image: url(https://images.unsplash.com/photo-1630534658718-395efda906cb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzUxMDA&ixlib=rb-4.0.3&q=80);
+    background-size: cover;
+    background-position: right -50px;
+    background-color: lightslategray;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+  }
+  .bg-text {
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+  }
+  .bg-text a {
+    margin: 5px;
+    float: right;
+  }
+  
+  #bg1:target .bg {
+    -webkit-animation: ciut 1s forwards;
+            animation: ciut 1s forwards;
+  }
+  #bg1:target {
+    -webkit-animation: fre 0.3s forwards;
+            animation: fre 0.3s forwards;
+  }
+  #bg2:target .bg1 {
+    -webkit-animation: ciut 1s forwards;
+            animation: ciut 1s forwards;
+  }
+  #bg2:target {
+    -webkit-animation: fre1 0.3s forwards;
+            animation: fre1 0.3s forwards;
+  }
+  #conbg:target .bg2 {
+    -webkit-animation: ciut1 1s;
+            animation: ciut1 1s;
+  }
+  @-webkit-keyframes fre1 {
+    0% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes fre1 {
+    0% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @-webkit-keyframes fre {
+    0% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  @keyframes fre {
+    0% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  @-webkit-keyframes ciut {
+    0% {
+      opacity: 1;
+      transform: rotate(-5deg) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(360deg) scale(0);
+    }
+  }
+  @keyframes ciut {
+    0% {
+      opacity: 1;
+      transform: rotate(-5deg) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(360deg) scale(0);
+    }
+  }
+  @-webkit-keyframes ciut1 {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg) scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(370deg) scale(1);
+    }
+  }
+  @keyframes ciut1 {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg) scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(370deg) scale(1);
+    }
+  }
