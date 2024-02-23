@@ -28,7 +28,7 @@ body {
     white-space: pre;
     margin-top: 0;
     padding: 20px;
-    animation: glow 3s linear infinite; /* Apply the glowing animation to the entire block */
+    animation: glow 1s linear infinite; /* Apply the glowing animation to the entire block */
     display: inline-block; /* Display as an inline-block */
     text-align: left; /* Align text to the left */
     line-height: 1.4; /* Adjust line spacing as needed */
@@ -939,4 +939,61 @@ footer{
     text-align: center;
     font-size: clamp(1.5rem, 0.75rem + 1.25vw, 2rem);
     color: #FAFAFA;
+}
+
+/*SERVICII CU CAROUSEL*/
+.service-section {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.title h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.description p {
+    font-size: 16px;
+    color: #666;
+}
+
+.photo-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }
