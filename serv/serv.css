@@ -1,152 +1,4 @@
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #161f2e;
-}
-
-.smooth-scroll {
-    scroll-behavior: smooth;
-}
-
-.code-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.code-block {
-    height: 100%;
-    width: 100%;
-    font-family: 'Courier New', monospace;
-    color: transparent; /* Set text color to transparent initially */
-    white-space: pre;
-    margin-top: 0;
-    padding: 20px;
-    animation: glow 1s linear infinite; /* Apply the glowing animation to the entire block */
-    display: inline-block; /* Display as an inline-block */
-    text-align: left; /* Align text to the left */
-    line-height: 1.4; /* Adjust line spacing as needed */
-    box-shadow: 0 0 20px 10px #6a1b9a inset; /* Apply the box shadow as inset */
-    opacity: 0; /* Start with zero opacity */
-    position: relative; /* Add relative positioning for pseudo-element */
-    background: url('code-lines.png'); /* Set a background image for code lines */
-    background-repeat: no-repeat; /* Prevent repeating of the image */
-    background-size: cover; /* Scale the image to fit the container */
-    width: 100%; /* Set the width to 100% to align to the left */
-    z-index: 1 !important;
-}
-
-
-@keyframes glow {
-    0% {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(0px);
-        text-shadow: 0 0 10px #6a1b9a, 0 0 20px #6a1b9a, 0 0 30px #6a1b9a;
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-}
-
-.logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px; /* Adjust the size of the logo as needed */
-    opacity: 0; /* Start with zero opacity */
-    animation: fadeIn 2s ease-in-out forwards; /* Apply the fade-in animation */
-    z-index: 10;
-}
-
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-.text-box{
-    z-index:100;
-}
-#index_button{
-    width: 200px;
-    height: 100px;
-}
-
-.cool-button {
-    background-color: #6a1b9a;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    z-index: 1000;
-    position: relative;
-    overflow: hidden;
-    animation: fadeIn 5s ease-in-out forwards; /* Apply the fade-in animation */
-    margin: 0 20vh;
-}
-
-.cool-button:hover {
-    background-color: #ffffff;
-}
-
-.cool-button::before {
-    content: '';
-    position: absolute;
-    background: radial-gradient(circle, #b91fd8, transparent);
-    width: 100%;
-    height: 100%;
-    transform: scale(0);
-    transition: transform 0.3s ease;
-    border-radius: 5px;
-}
-
-.cool-button:hover::before {
-    transform: scale(2);
-    transition: transform 0.3s ease;
-}
-
-.button-container1 {
-    text-align: center;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index:11;
-}
-
-
-.button-container2 {
-    text-align: center;
-    text-align: center;
-    position: relative; /* Add this line to make it relative to its parent */
-    top: 0; /* Reset any potential vertical offset */
-    z-index:11;
-}
-
-.cool-button.hidden {
-    display: none;
-}
-/*start home page*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/*header, nav*/
 
 * {
     margin: 0;
@@ -155,8 +7,9 @@ body {
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
 }
-
-/*header, nav*/
+body{
+    background-color: #161f2e;
+}
 header{
     display: flex;
     align-items: center;
@@ -304,11 +157,12 @@ header li, a, button{
         display: flex;
     }
 
-    .animated-title {
+    .service_sectionx .animated-title {
         /* Adjust the properties as needed for mobile screens */
         margin-bottom: 10vh; /* Increased spacing for mobile screens */
         opacity: 1; /* Adjusted for mobile, if needed */
         transform: translateY(0); /* Adjusted for mobile, if needed */
+        z-index: 50; /* Ensure the title is on top of the image */
     }
 
     .service_sectionx > * {
@@ -380,13 +234,13 @@ header li, a, button{
         height: fit-content!important;
         opacity: 1!important;
     }
-    .service1{
+    .service1, .service2, .service3 {
         margin-top: 0!important;
         flex-direction: column!important;
         height: 1200px!important;
         opacity: 1!important;
     }
-    .service1__image{
+    .service1__image, .service2__image, .service3__image{
         flex: 1!important;
         opacity: 1!important;
         width: 100vw!important;
@@ -394,7 +248,7 @@ header li, a, button{
         border-radius: 0!important;
         height: 300px!important;
     }
-    .service1__content{
+    .service1__content, .service2__content, .service3__content{
         opacity: 1!important;
         flex: 1!important;
         margin-top: 1rem;
@@ -402,19 +256,20 @@ header li, a, button{
         align-items: flex-start!important;
         height: fit-content!important;
     }
-    #service2_img{
+    #service2_img, #service3_img{
         order:1!important;
     }
-    #service2_content{
+    #service2_img, #service3_img{
         order:2!important;
     }
-    .service1__content-info {
+    .service1__content-info, .service2__content-info, .service3__content-info {
         width: 100%!important;
         opacity: 1!important;
         border-radius: 0!important;
     }
     .service-sectionx {
         margin-bottom: 20vh;
+        background-color: #161f2e;
     }
     
     /* To ensure the last element in a series doesn't have a bottom margin */
@@ -424,8 +279,40 @@ header li, a, button{
     
 }
 
+/* Servicii */
+
+.intro{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(servicii1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.intro__content{
+    background-color: rgba(0, 0, 0, .6);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro__content h1{
+    text-align: center;
+    font-size: clamp(1.5rem, 0.5rem + 2.5vw, 3rem);
+    color: #FAFAFA;
+}
+.intro__content p{
+    text-align: center;
+    font-size: clamp(1.5rem, 0.75rem + 1.25vw, 2rem);
+    color: #FAFAFA;
+}
+
 .service-sectionx {
     margin-bottom: 20vh;
+    background-color: #161f2e;
 }
 
 /* To ensure the last element in a series doesn't have a bottom margin */
@@ -546,7 +433,7 @@ footer{
     z-index: 2; /* Higher z-index to be on top of the image */
     text-align: center;
     padding: 20px;
-    /*background-color: rgba(22, 31, 46, 0.8);  Semi-transparent background */
+    background-color: #161f2e;
 }
 
 .square {
@@ -567,6 +454,7 @@ footer{
 
 .square h2, .square p {
     margin: 10px 0; /* Uniform margin for spacing */
+    color:#FAFAFA;
 }
 
 .square:hover {
@@ -601,146 +489,6 @@ footer{
     transform: scale(1.1);
 }
 
-
-/* contact styles*/
-.rectangle-container{
-    margin-top: 50px;
-    display: flex;
-    flex: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.rectangle {
-    width: 300px;
-    background-color: #161f2e; /* Dark blue background */
-    color: #fff; /* White text */
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    margin-left: 25px;
-    margin-right: 25px;
-    display: flex; /* Use flexbox to center items */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-}
-
-.rectangle:hover{
-    transform: scale(1.1);
-}
-
-/* Adjust the styles of the <a> elements inside .rectangle */
-.rectangle a {
-    text-decoration: none;
-    color: inherit;
-    display: flex; /* Use flexbox to center items */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-}
-
-/* Center the <i> and <h3> elements inside <a> */
-.rectangle a i,
-.rectangle a h3 {
-    margin: 5px;
-}
-
-/* Add some spacing between the elements if needed */
-.rectangle a i {
-    margin-bottom: 5px;
-}
-
-.map_container {
-    margin-top: 100px;
-    text-align: center; /* Center the contents horizontally */
-    padding: 0 20px; /* Add padding left and right */
-}
-
-/* Styles for the iframe within the map container */
-.map_container > p > iframe {
-    border: 2px solid #161f2e;
-    width: 100%; /* Make the iframe fill its container horizontally */
-    max-width: 1200px; /* Set a maximum width */
-    height: 400px; /* Adjust the height as needed */
-    border: 0; /* Remove the iframe border (already specified above) */
-}
-
-.form-container {
-    text-align: center; /* Center the contents horizontally */
-    width: 60%; /* Set the width of the container to 60% */
-    margin: 0 auto; /* Center the container horizontally */
-}
-
-.form-container form{
-    margin-top: 50px;
-}
-
-/* Style for the form container */
-.form-container {
-    margin-top:50px;
-    margin-bottom: 50px;
-    background-color: #f7f7f7; /* Background color for the container */
-    padding: 20px;
-    border-radius: 10px; /* Rounded container */
-}
-
-/* Styles for the centered-input elements (labels and input fields) */
-.centered-input {
-    margin-bottom: 15px;
-}
-
-.centered-input label {
-    display: block;
-    margin-bottom: 5px;
-    color: #161f2e; /* Text color */
-}
-
-.centered-input input[type="text"],
-.centered-input textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 10px; /* Rounded input fields */
-    color: #161f2e; /* Text color */
-}
-
-/* Style the button */
-.buton_form {
-    background-color: #161f2e; /* Dark blue background color */
-    color: #fff; /* White text color */
-    border: none;
-    border-radius: 10px; /* Rounded button */
-    padding: 10px 20px;
-    cursor: pointer;
-    display: block; /* Make the button a block element for centering */
-    margin: 0 auto; /* Center the button horizontally */
-}
-
-/* Adjust the button on hover (e.g., change background color) */
-.buton_form:hover {
-    background-color: #0d1420; /* Darker blue on hover */
-}
-.button-container {
-    text-align: center;
-    padding: 20px;
-}
-
-.cool-button1 {
-    background: linear-gradient(45deg, #ff6b6b, #ffa67a);
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    padding: 15px 30px;
-    font-size: 16px;
-    cursor: pointer; 
-    transition: background 0.3s, transform 0.3s;
-    width:10%;
-}
-
-.cool-button1:hover {
-    background: linear-gradient(45deg, #ffa67a, #ff6b6b);
-    transform: scale(1.05);
-}
-
 .service {
     text-align: center;
     opacity: 0;
@@ -760,39 +508,7 @@ footer{
     margin-bottom: 1vh;
 }
 
-.pret{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.4rem;
-    background-color: #6a1b9a;
-    border-radius: 1rem;
-    width: 7rem;
-    text-align: center;
-    
-}
-.pret-contact{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.pret-contact a{
-    background-color: rgb(63, 11, 73);
-    padding: 0.6rem;
-    border-radius: 1rem;
-    text-align: center;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: clamp(1.3rem, 0.5rem + 1.5vw, 1.7rem);
-}
-.pret-contact a:hover{
-    cursor: pointer;
-    background-color: rgb(63, 11, 73, 0.7);
-}
-  
-  .animated-index {
+.animated-index {
     font-size: clamp(1rem, 1rem + 2.5vw, 3rem);
     margin-right: 20px;
     color: #3498db;
@@ -823,30 +539,7 @@ footer{
     opacity: 1;
   }
 
-  /*Login / Register */
-  .login-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    background: url(background-med.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.register-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    background: url(background.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.wrapper {
+  .wrapper {
     width: min(420px, 100vw);
     background: transparent;
     color: #fff;
@@ -868,119 +561,6 @@ footer{
     width: 100%;
     height: 50px;
     margin: 30px 0;
-}
-
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
-}
-
-.input-box input::placeholder {
-    color: #fff;
-}
-
-.input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-}
-
-.wrapper .remember-forgot{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-}
-
-.remember-forgot label input{
-    accent-color: #fff;
-    margin-right: 3px;
-}
-
-.remember-forgot a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.remember-forgot a:hover{
-    text-decoration: underline;
-
-}
-.wrapper .btn{
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
-}
-
-.wrapper .register-link{
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-
-.register-link p a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.register-link p a:hover{
-    text-decoration: underline;
-}
-.credit{
-    position: absolute;
-    left: 5px;
-    top: 110%;
-    color: rgb(136, 131, 131);
-}
-
-/* Servicii */
-
-.intro{
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(servicii1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.intro__content{
-    background-color: rgba(0, 0, 0, .6);
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.intro__content h1{
-    text-align: center;
-    font-size: clamp(1.5rem, 0.5rem + 2.5vw, 3rem);
-    color: #FAFAFA;
-}
-.intro__content p{
-    text-align: center;
-    font-size: clamp(1.5rem, 0.75rem + 1.25vw, 2rem);
-    color: #FAFAFA;
 }
 
 /*SERVICII CU CAROUSEL*/
@@ -1040,11 +620,12 @@ footer{
     background-color: rgba(0,0,0,0.8);
 }
 
-/* slider servicii */
+/* slider1 servicii */
 
 .conbg {
     width: 100%;
     height: 500px;
+    z-index: 20;
   }
   .bg2 {
     z-index: 20;
@@ -1052,10 +633,10 @@ footer{
     width: 70%;
     margin: 100px auto;
     transform: rotate(10deg);
-    background-image: url(https://images.unsplash.com/photo-1623691183627-4d6075a8d0d7?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzUwNDk&ixlib=rb-4.0.3&q=80);
+    background-image: url('i4.jpg');
     background-size: cover;
     background-position: right -50px;
-    background-color: lightslategray;
+    background-color: lightslategray;   
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
   }
   .bg1 {
@@ -1063,7 +644,7 @@ footer{
     position: relative;
     margin: auto;
     transform: rotate(-5deg);
-    background-image: url(https://images.unsplash.com/photo-1575419268007-a9a5e6b1ce0b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzQ5NjY&ixlib=rb-4.0.3&q=80);
+    background-image: url('i1.jpg');
     background-size: cover;
     background-position: right -70px;
     background-color: lightslategray;
@@ -1075,12 +656,14 @@ footer{
     margin: auto;
     transform: rotate(-5deg);
     height: 500px;
-    background-image: url(https://images.unsplash.com/photo-1630534658718-395efda906cb?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMzUxMDA&ixlib=rb-4.0.3&q=80);
+    background-image: url('i3.jpg');
     background-size: cover;
     background-position: right -50px;
     background-color: lightslategray;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
   }
+
+  /*final servicii*/
   .bg-text {
     width: 100%;
     position: absolute;
@@ -1185,3 +768,62 @@ footer{
       transform: rotate(370deg) scale(1);
     }
   }
+
+  /* Slider2 styles */
+.slider2 .conbg {
+    /* Inherits styles from .conbg as it's generic */
+  }
+  .slider2 .conbg .bg2 {
+    /* Inherits and overrides necessary properties */
+    background-image: url('i1.jpg') !important;
+  }
+  .slider2 .conbg .bg1 {
+    /* Inherits and overrides necessary properties */
+    background-image: url('i2.jpg') !important;
+  }
+  .slider2 .conbg .bg {
+    /* Inherits and overrides necessary properties */
+    background-image: url('i3.jpg')!important;
+  }
+  
+  /* Slider3 styles */
+  .slider3 .conbg {
+    /* Inherits styles from .conbg as it's generic */
+  }
+  .slider3 .conbg .bg2 {
+    /* Inherits and overrides necessary properties */
+    background-image: url('i2.jpg');
+  }
+  .slider3 .conbg .bg1 {
+    /* Inherits and overrides necessary properties */
+    background-image: url('i3.jpg');
+  }
+  .slider3 .conbg .bg {
+    /* Inherits and overrides necessary properties */
+    background-image: url('i4.jpg');
+  }
+  
+  /* Adjustments for target-based animations and interactions */
+  #bg3:target .bg {
+    -webkit-animation: ciut 1s forwards;
+            animation: ciut 1s forwards;
+  }
+  #bg3:target {
+    -webkit-animation: fre 0.3s forwards;
+            animation: fre 0.3s forwards;
+  }
+  #bg4:target .bg1 {
+    -webkit-animation: ciut 1s forwards;
+            animation: ciut 1s forwards;
+  }
+  #bg4:target {
+    -webkit-animation: fre1 0.3s forwards;
+            animation: fre1 0.3s forwards;
+  }
+  #conbg2:target .bg2, #conbg3:target .bg2 {
+    -webkit-animation: ciut1 1s forwards;
+            animation: ciut1 1s forwards;
+  }
+  /* You may need to create new animations or adjust existing ones to fit the new sliders */
+  
+  

@@ -8,13 +8,17 @@ function handleScroll() {
           service.style.opacity = 1;
           // Apply fade-in animation to the image
           const image = service.querySelector('.service1__image');
-          image.style.transition = 'opacity 1s ease-in';
-          image.style.opacity = 1;
+          if (image) { // Check if the element exists
+              image.style.transition = 'opacity 1s ease-in';
+              image.style.opacity = 1;
+          }
   
           setTimeout(() => {
             const description = service.querySelector('.service1__content');
-            description.style.opacity = 1;
-          }, 1000);
+            if (description) { // Check if the element exists
+                description.style.opacity = 1;
+            }
+           }, 1000);
           service.classList.add('visible');
         }
       }

@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*header, nav*/
+header{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background: #0d1420;
+}
+header li, a, button{
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu-mobile-img{
+    z-index: 101;
+    font-size: 45px;
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+.menu-mobile{
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0px;
+    left: 0;
+    display: none;
+    padding-top: 90px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0d1420;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+.menu-mobile.open{
+    height: 350px;
+}
+.menu-mobile__links ul{
+    display: flex;
+}
+.menu-mobile__links li{
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.menu-mobile__links li a{
+    display: block;
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: #fefefe;
+    margin: 0 5px;
+}
+.menu-mobile__links li a:hover{
+    background-color: rgb(35, 38, 61);
+}
+.menu-mobile__links li:nth-child(5) a:hover{
+    background-color: transparent;
+}
+
+.menu-mobile__links button{
+    padding: 9px 25px;
+    background-color: #2b4574;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.menu-mobile__links button:hover {
+    background-color: rgba(43, 69, 116, 0.8);
+}
+
+.navbar{
+    flex: 80%;
+    display: flex;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.header__logo{
+    flex: 65%;
+    display: flex;
+    position: relative;
+}
+.header__logo__img{
+    z-index: 2;
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar__links{
+    flex: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.features__container{
+    background-color: #161f2e;
+    width: 100vw !important;
+    /* Additional styling to ensure no horizontal scroll */
+    box-sizing: border-box; /* Includes padding and border in the element's width and height */
+    margin-left: auto;
+    margin-right: auto;
+    /* Remove default margin/padding that could cause horizontal scrolling */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.navbar__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navbar__links li a:hover{
+    color: #b5bec4;
+}
+
+.active{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.login-btn {
+    z-index: 100;
+}
+
+.login-btn button{
+    margin-right: 60px;
+    padding: 9px 25px;
+    background-color: rgba(43, 69, 116, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.login-btn button:hover{
+    background-color: rgba(43, 69, 116, 0.8);
+}
+
+@media only screen and (max-width: 900px){
+    .navbar__links{
+        display: none;
+    }
+    .login-btn{
+        display: none;
+    }
+    .menu-mobile-img{
+        display: block;
+    }
+    .menu-mobile{
+        display: flex;
+    }
+
+    .service_sectionx .animated-title {
+        /* Adjust the properties as needed for mobile screens */
+        margin-bottom: 10vh; /* Increased spacing for mobile screens */
+        opacity: 1; /* Adjusted for mobile, if needed */
+        transform: translateY(0); /* Adjusted for mobile, if needed */
+        z-index: 50; /* Ensure the title is on top of the image */
+    }
+
+    .service_sectionx > * {
+        margin-bottom: 10vh;
+    }
+
+    .service_sectionx > *:last-child {
+        margin-bottom: 10vh; /* Remove margin from the last element */
+    }
+
+    .service_sectionx .square-section {
+        width: 90vw; /* Adjusted width for mobile screens */
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-evenly !important;
+        align-items: center; /* Center align the squares */
+    }
+    
+    .service_sectionx .square {
+        width: 90%;
+        /* Adjust margins for top and bottom */
+        margin-top: 5vw; /* Half of 10vw, as it will be combined with the bottom margin of the previous element */
+        margin-bottom: 5vw; /* Half of 10vw */
+        /* Other styles for .square */
+    }
+    
+    /* You might need this to handle the first and last square */
+    .square:first-child {
+        margin-top: 0; /* Remove top margin for the first square */
+    }
+    
+    .square:last-child {
+        margin-bottom: 0; /* Remove bottom margin for the last square */
+    }
+
+    .service1 .square-section {
+        margin-top:60vh;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-evenly !important;
+        align-items: center; /* Center align the squares */
+    }
+
+    .service1 .square-section .square {
+        margin-top: 5vw; /* Half of 10vw */
+        margin-bottom: 5vw; /* Half of 10vw */
+        /* Other styles for .square */
+    }
+
+    .service1 .square-section .square:first-child {
+        margin-top: 0; /* Remove top margin for the first square */
+    }
+
+    .service1 .square-section .square:last-child {
+        margin-bottom: 0; /* Remove bottom margin for the last square */
+    }
+    
+    .wrapper .remember-forgot{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro{
+        background: url(servicii1.png);;
+    }
+    .service{
+        height: fit-content!important;
+        opacity: 1!important;
+    }
+    .service1{
+        margin-top: 0!important;
+        flex-direction: column!important;
+        height: 1200px!important;
+        opacity: 1!important;
+    }
+    .service1__image{
+        flex: 1!important;
+        opacity: 1!important;
+        width: 100vw!important;
+        margin-left: 0!important;
+        border-radius: 0!important;
+        height: 300px!important;
+    }
+    .service1__content{
+        opacity: 1!important;
+        flex: 1!important;
+        margin-top: 1rem;
+        padding-left: 0!important;
+        align-items: flex-start!important;
+        height: fit-content!important;
+    }
+    #service2_img{
+        order:1!important;
+    }
+    #service2_content{
+        order:2!important;
+    }
+    .service1__content-info {
+        width: 100%!important;
+        opacity: 1!important;
+        border-radius: 0!important;
+    }
+    .service-sectionx {
+        margin-bottom: 20vh;
+    }
+    
+    /* To ensure the last element in a series doesn't have a bottom margin */
+    .service-sectionx :last-child {
+        margin-bottom: 0;
+    }
+    
+}
+
+/*footer*/
+footer{
+    background-color: #0d1420;
+    width: 100%;
+}
+
+.footer__container{
+    width: 100%;
+    padding: 70px 30px 20px 30px;
+}
+.footer__container-social{
+    display: flex;
+    justify-content: center;
+}
+.footer__container-social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f0ebeb;
+    margin: 10px;
+    border-radius: 50%;
+}
+.footer__container-social a i{
+    font-size: 2rem;
+    color: black;
+    opacity: 0.9;
+}
+.footer__container-social a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.footer__container-social a:hover i{
+    color: #fff;
+    transition: 0.5s;
+}
+.footer__container-nav{
+    margin: 30px 0;
+}
+.footer__container-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer__container-nav ul li a{
+    color:#fff;
+    margin: min(30px, 5vw);
+    text-decoration: none;
+    font-size: clamp(.5rem, 2vw + .5rem, 1rem);
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footer__container-navul li a:hover{
+    opacity: 1;
+}
+.footer__copy{
+    color: #fff;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+.footer__copy p{
+    color: #fff;
+}
+.footer__copy-name{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
