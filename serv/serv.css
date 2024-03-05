@@ -46,7 +46,7 @@ header li, a, button{
     transition: height 0.5s;
 }
 .menu-mobile.open{
-    height: 350px;
+    height: 300px;
 }
 .menu-mobile__links ul{
     display: flex;
@@ -107,6 +107,21 @@ header li, a, button{
     align-items: center;
     list-style: none;
 }
+.features__container{
+    background-color: #161f2e;
+    width: 100vw !important;
+    /* Additional styling to ensure no horizontal scroll */
+    box-sizing: border-box; /* Includes padding and border in the element's width and height */
+    margin-left: auto;
+    margin-right: auto;
+    /* Remove default margin/padding that could cause horizontal scrolling */
+    padding-left: 0;
+    padding-right: 0;
+}
+.features::after{
+    visibility: hidden;
+}
+
 
 .navbar__links li{
     display: inline-block;

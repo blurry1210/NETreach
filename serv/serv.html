@@ -242,5 +242,13 @@
     <script src="/serv/menu.js"></script>
     <script src="/serv/title.js"></script>
     <script src="/serv/square.js"></script>
+    <script>
+        const toggleBtn = document.querySelector('.menu-mobile-img');
+        const dropDownMenu = document.querySelector('.menu-mobile');
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
