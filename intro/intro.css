@@ -384,7 +384,7 @@ a.labs-follow-me {
 
 @media only screen and (max-width: 50rem) {
   :root {
-    font-size: 90%;
+    font-size: 100%;
   }
 }
 
@@ -462,3 +462,17 @@ a.labs-follow-me {
       opacity: 1;
   }
 }
+
+.container {
+  transform-origin: center; /* Ensure zooming in happens from the center */
+  transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+@media (max-width: 768px) {
+  .container {
+    /* Apply a zoom effect for screens that are 768px wide or less */
+    /* This replaces the need to use --wi for zooming */
+    transform: scale(1.9); /* Example zoom level; adjust as needed */
+  }
+}
+
