@@ -394,7 +394,7 @@ a.labs-follow-me {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index:11;
+  z-index: 11;
 }
 
 .cool-button {
@@ -408,8 +408,8 @@ a.labs-follow-me {
   z-index: 1000;
   position: relative;
   overflow: hidden;
-  animation: fadeIn 5s ease-in-out forwards; /* Apply the fade-in animation */
-  margin: 0 20vh;
+  animation: fadeIn 5s ease-in-out forwards;
+  margin: 0 20vh; /* This will be overridden for mobile screens */
 }
 
 .cool-button:hover {
@@ -437,11 +437,35 @@ a.labs-follow-me {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px; /* Adjust the size of the logo as needed */
-  opacity: 0; /* Start with zero opacity */
-  animation: fadeIn 2s ease-in-out forwards; /* Apply the fade-in animation */
+  width: 500px; /* This will be overridden for mobile screens */
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
   z-index: 22;
 }
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 1000px) {
+  .cool-button, .logo {
+    right: -75%; /* Move to the right of the viewport, half out of bounds */
+    top: auto;
+    left: auto;
+    bottom: -50%;
+    transform: translate(50%, -50%); /* Adjust translate to position correctly */
+  }
+
+  .cool-button {
+    width: 30vw;
+    height: 10vh;
+    margin: 0; /* Reset margin for mobile */
+  }
+
+  .logo {
+    width: 30vw; /* Adjust logo width to match button width on mobile */
+    height: auto; /* Adjust height automatically based on the width to maintain aspect ratio */
+    margin-bottom: 10vh; /* Space between logo and button */
+  }
+}
+
 
 .header__logo{
   flex: 65%;

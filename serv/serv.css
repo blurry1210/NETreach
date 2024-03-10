@@ -666,7 +666,7 @@ footer{
     width: 70%;
     margin: 100px auto;
     transform: rotate(10deg);
-    background-image: url('i4.jpg');
+    background-image: url('i2.jpg');
     background-size: cover;
     background-position: right -50px;
     background-color: lightslategray;   
@@ -677,7 +677,7 @@ footer{
     position: relative;
     margin: auto;
     transform: rotate(-5deg);
-    background-image: url('i1.jpg');
+    background-image: url('4.jpeg');
     background-size: cover;
     background-position: right -70px;
     background-color: lightslategray;
@@ -689,7 +689,7 @@ footer{
     margin: auto;
     transform: rotate(-5deg);
     height: 500px;
-    background-image: url('i3.jpg');
+    background-image: url('5.jpeg');
     background-size: cover;
     background-position: right -50px;
     background-color: lightslategray;
