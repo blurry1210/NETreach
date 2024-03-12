@@ -1,13 +1,28 @@
+.hero-wrapper{
+  height: fit-content;
+}
+.hero-section{
+  height: fit-content;
+}
 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     max-width: 500px;
+    width: 100vw;
+    height: fit-content;
     margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   label {
+    width: 80%;
     margin-bottom: 10px;
     display: block;
+  }
+  label textarea{
+    width: 100%;
   }
   input[type=email], textarea {
     width: 100%;
@@ -19,6 +34,7 @@ form {
   }
   button[type=submit] {
     background-color: #6a1b9a;
+    width: 100px;
   color: #ffffff;
   padding: 10px 20px;
   border: none;
@@ -28,12 +44,27 @@ form {
   z-index: 1000;
   position: relative;
   overflow: hidden;
-  margin: 0 20vh;
+  margin-bottom: 1rem;
   }
   button[type=submit]:hover {
     background-color: #000000;
   }
-
+  .gol{
+    height: 100px;
+  }
+  .formular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .formular p{
+    text-align: center;
+    font-size: clamp(1rem, -0.25rem + 3vw, 2rem);
+  }
+  .formular form{
+    backdrop-filter: blur(15px);
+  }
   button[type=submit]:before {
     content: '';
     position: absolute;

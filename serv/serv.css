@@ -158,6 +158,7 @@ header li, a, button{
 .login-btn button:hover{
     background-color: rgba(43, 69, 116, 0.8);
 }
+
 @media only screen and (max-width: 900px){
     .navbar__links{
         display: none;
