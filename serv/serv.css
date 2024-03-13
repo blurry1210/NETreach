@@ -262,6 +262,9 @@ header li, a, button{
         opacity: 1!important;
     }
     .service1__image, .service2__image, .service3__image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex: 1!important;
         opacity: 1!important;
         width: 100vw!important;
@@ -289,6 +292,16 @@ header li, a, button{
     }
     #conbg, #conbg2, #conbg3{
         width: 90vw;
+    }
+    .bg2 {
+        background-position: center!important;
+      }
+    .bg1 {
+        background-position: center!important;
+    }
+    .bg {
+
+        background-position: center!important;
     }
     .service1__content-info, .service2__content-info, .service3__content-info {
         width: 100%!important;
