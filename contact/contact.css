@@ -64,6 +64,7 @@ form {
   }
   .formular form{
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
   }
   button[type=submit]:before {
     content: '';
