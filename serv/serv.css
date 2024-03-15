@@ -889,17 +889,17 @@ footer{
 }
 
 @media only screen and (max-width: 900px) {
-    .slider2 .conbg .bg2 {
+    #conbg2 .bg2 {
         background-image: url('/serv/mo1.png');
         background-position: center;
     }
 
-    .slider2 .conbg .bg1 {
+    #conbg2 .bg1 {
         background-image: url('/serv/mo2.png');
         background-position: center;
     }
 
-    .slider2 .conbg .bg {
+    #conbg2 .bg {
         background-image: url('/serv/mo3.png');
         background-position: center;
     }
