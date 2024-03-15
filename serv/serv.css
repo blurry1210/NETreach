@@ -712,6 +712,8 @@ footer{
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
   }
 
+  
+
   /*final servicii*/
   .bg-text {
     width: 100%;
@@ -851,6 +853,23 @@ footer{
     /* Inherits and overrides necessary properties */
     background-image: url('i4.jpg');
   }
+
+  @media only screen and (max-width: 900px) {
+    .slider3 .conbg .bg2 {
+        background-image: url('dm1.png');
+        background-position: center;
+    }
+
+    .slider3 .conbg .bg1 {
+        background-image: url('dm2.png');
+        background-position: center;
+    }
+
+    .slider3 .conbg .bg {
+        background-image: url('dm3.png');
+        background-position: center;
+    }
+}
   
   /* Adjustments for target-based animations and interactions */
   #bg3:target .bg {
