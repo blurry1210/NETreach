@@ -870,6 +870,41 @@ footer{
         background-position: center;
     }
 }
+
+@media only screen and (max-width: 900px) {
+    .bg2 {
+        background-image: url('ps1.png');
+        background-position: center;
+    }
+
+    .bg1 {
+        background-image: url('ps2.png');
+        background-position: center;
+    }
+
+    .bg {
+        background-image: url('ps3.png');
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .slider2 .conbg .bg2 {
+        background-image: url('/serv/mo1.png');
+        background-position: center;
+    }
+
+    .slider2 .conbg .bg1 {
+        background-image: url('/serv/mo2.png');
+        background-position: center;
+    }
+
+    .slider2 .conbg .bg {
+        background-image: url('/serv/mo3.png');
+        background-position: center;
+    }
+}
+
   
   /* Adjustments for target-based animations and interactions */
   #bg3:target .bg {
