@@ -946,4 +946,6 @@ footer{
   }
   /* You may need to create new animations or adjust existing ones to fit the new sliders */
   
-  
+  .hero-content{
+    background-color: rgba(0, 0, 0, .5);
+  }
