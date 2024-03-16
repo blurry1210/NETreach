@@ -821,18 +821,18 @@ footer{
   }
 
   /* Slider2 styles */
-.slider2 .conbg {
+  .slider2 .conbg {
     /* Inherits styles from .conbg as it's generic */
   }
-  .conbg2 .bg2 {
+  #conbg2 .bg2 {
     /* Inherits and overrides necessary properties */
     background-image: url('m1.jpeg') !important;
   }
-  .conbg2 .bg1 {
+  #conbg2 .bg1 {
     /* Inherits and overrides necessary properties */
     background-image: url('m2.jpg') !important;
   }
-  .conbg2 .bg {
+  #conbg2 .bg {
     /* Inherits and overrides necessary properties */
     background-image: url('m3.jpg')!important;
   }
