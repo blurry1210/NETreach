@@ -66,6 +66,14 @@ form {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
   }
+  .features{
+    display: flex !important;;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .features-box{
+    text-align: center;
+  }
   button[type=submit]:before {
     content: '';
     position: absolute;
