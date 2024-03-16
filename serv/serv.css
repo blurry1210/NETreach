@@ -824,17 +824,17 @@ footer{
 .slider2 .conbg {
     /* Inherits styles from .conbg as it's generic */
   }
-  .slider2 .conbg .bg2 {
+  .conbg2 .bg2 {
     /* Inherits and overrides necessary properties */
-    background-image: url('i1.jpg') !important;
+    background-image: url('m1.jpeg') !important;
   }
-  .slider2 .conbg .bg1 {
+  .conbg2 .bg1 {
     /* Inherits and overrides necessary properties */
-    background-image: url('i2.jpg') !important;
+    background-image: url('m2.jpg') !important;
   }
-  .slider2 .conbg .bg {
+  .conbg2 .bg {
     /* Inherits and overrides necessary properties */
-    background-image: url('i3.jpg')!important;
+    background-image: url('m3.jpg')!important;
   }
   
   /* Slider3 styles */
@@ -843,15 +843,15 @@ footer{
   }
   .slider3 .conbg .bg2 {
     /* Inherits and overrides necessary properties */
-    background-image: url('i2.jpg');
+    background-image: url('d1.jpeg');
   }
   .slider3 .conbg .bg1 {
     /* Inherits and overrides necessary properties */
-    background-image: url('i3.jpg');
+    background-image: url('d2.jpg');
   }
   .slider3 .conbg .bg {
     /* Inherits and overrides necessary properties */
-    background-image: url('i4.jpg');
+    background-image: url('d3.jpg');
   }
 
   @media only screen and (max-width: 900px) {
