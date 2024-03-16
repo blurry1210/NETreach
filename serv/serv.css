@@ -927,6 +927,23 @@ footer{
     -webkit-animation: ciut1 1s forwards;
             animation: ciut1 1s forwards;
   }
+
+  #bg5:target .bg {
+    -webkit-animation: ciut 1s forwards;
+            animation: ciut 1s forwards;
+  }
+  #bg5:target {
+    -webkit-animation: fre 0.3s forwards;
+            animation: fre 0.3s forwards;
+  }
+  #bg6:target .bg1 {
+    -webkit-animation: ciut 1s forwards;
+            animation: ciut 1s forwards;
+  }
+  #bg6:target {
+    -webkit-animation: fre1 0.3s forwards;
+            animation: fre1 0.3s forwards;
+  }
   /* You may need to create new animations or adjust existing ones to fit the new sliders */
   
   
