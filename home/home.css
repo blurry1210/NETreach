@@ -106,7 +106,7 @@ header li, a, button{
 }
 .features__container{
     background-color: #161f2e;
-    width: 100vw !important;
+    width: 100% !important;
     /* Additional styling to ensure no horizontal scroll */
     box-sizing: border-box; /* Includes padding and border in the element's width and height */
     margin-left: auto;
