@@ -890,17 +890,17 @@ footer{
 
 @media only screen and (max-width: 900px) {
     #conbg2 .bg2 {
-        background-image: url('/serv/mo1.png')!important;
+        background-image: url('mo1.png')!important;
         background-position: center;
     }
 
     #conbg2 .bg1 {
-        background-image: url('/serv/mo2.png')!important;
+        background-image: url('mo2.png')!important;
         background-position: center;
     }
 
     #conbg2 .bg {
-        background-image: url('/serv/mo3.png')!important;
+        background-image: url('mo3.png')!important;
         background-position: center;
     }
 }
