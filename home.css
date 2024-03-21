@@ -5,8 +5,6 @@
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
 }
-
-/*header, nav*/
 header{
     display: flex;
     align-items: center;
